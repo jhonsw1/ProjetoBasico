@@ -1,0 +1,67 @@
+:root {
+    --father-color: #f0f0f0;
+    --login-color: #0000CD;
+    --label-color: #555;
+    --button-color: #fff;
+    --button-color-hover: #2185d0;
+}
+
+body {
+    background-color: #6495ED;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; 
+}
+
+.parent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--father-color);
+    height: 400px;
+    width: 450px; 
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+    border-radius: 3px;
+}
+
+
+.child {
+    height: 300px;
+    width: 300px;
+    display: flex;
+}
+
+.h1-login {
+    color: var(--login-color);
+    text-align: center;
+}
+
+.label-login {
+    display: block;
+    margin-bottom: 8px;
+    color: var(--label-color);
+}
+
+input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.button-login {
+    background-color: #3498db;
+    color: var(--button-color);
+    padding: 10px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    width: 105%;
+}
+
+button:hover {
+    background-color: var(--button-color-hover);
+}

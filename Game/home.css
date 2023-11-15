@@ -1,0 +1,66 @@
+:root {
+    --body-color: #f4f4f4;
+    --container-color: #fff;
+    --cell-color: #3498db;
+    --cell-hover-color: #2185d0;
+    --button-color: #3498db;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: var(--body-color);
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.container {
+    background-color: var(--container-color);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.board {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-gap: 5px;
+    margin: 20px auto;
+}
+
+.cell {
+    width: 100px;
+    height: 100px;
+    background-color: var(--cell-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    color: #fff;
+    cursor: pointer;
+}
+
+.cell:hover {
+    background-color: var(--cell-hover-color);
+}
+
+.message {
+    margin: 20px 0;
+    font-size: 18px;
+}
+
+button {
+    background-color: var(--button-color);
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: var(--button-color);
+}
